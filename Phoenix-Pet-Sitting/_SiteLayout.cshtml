@@ -2,14 +2,49 @@
 <html lang="en">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    @*<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83806060-4"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121492084-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'UA-83806060-4');
-    </script>*@
+        gtag('config', 'UA-121492084-1');
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83806060-11"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-83806060-11');
+    </script>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2503150939696528');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1"
+             src="https://www.facebook.com/tr?id=2503150939696528&ev=PageView
+&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 
     <meta charset="utf-8" />
     @*<title>@Page.Title - Akira Web Solutions</title>*@
@@ -19,6 +54,7 @@
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/jquery-ui-1.10.3.js"></script>
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/scripts.js"></script>
     <meta name="viewport" content="width=device-width" />
 </head>
 
@@ -37,19 +73,20 @@
             padding-right: 15%;
             max-height: 100%
         }
+
     </style>
     <section class="navigation">
-        <div class="nav-container">
+        @*<div class="nav-container">
             <div class="brand">
-                @*<a href="~/Default" title=" Home - Phoenix Pet Sitting Services">*@
+                <a href="~/Default" title=" Home - Phoenix Pet Sitting Services">
 
-                    <img src="~/Images/4e00196f423d6e8f3296ceda1f54031c.png" alt="Phoenix Pet Sitting Logo" style="width:124px;" />
-                @*</a>*@
-            </div>
+                <img src="~/Images/4e00196f423d6e8f3296ceda1f54031c.png" alt="Phoenix Pet Sitting Logo" style="width:124px;" />
+                </a>
+            </div>*@
             <nav>
-                <div class="nav-mobile"><a id="nav-toggle" href="#!" title="Expand"><span></span></a></div>
-                <ul class="nav-list">
-                    <li>
+                @*<div class="nav-mobile"><a id="nav-toggle" href="#!" title="Expand"><span></span></a></div>
+                <ul class="nav-list">*@
+                    @*<li>
                         <a href="~/Default" title=" Home - Phoenix Pet Sitting Services">Home</a>
                     </li>
                     <li>
@@ -81,30 +118,22 @@
                     </li>
                     <li>
                         <a href="~/Testimonials">Testimonials</a>
-                    </li>
-                    @*<li>
-                        <a href="#!" title="Expand">Testimonials</a>
-                        <ul class="nav-dropdown">
-
-                            <li>
-                                <a href="~/WebDevelopmentPortfolio" title="View our previous work and current clients">Website Development</a>
-                            </li>
-
-                        </ul>
                     </li>*@
-                    <li>
-                        <a href="~/FAQ" title="Commonly asked questions and answers">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="~/Contact" title="Contact Information for Phoenix Pet Sitting">Contact</a>
-                    </li>
-                    <li><a href="tel:+14807034155" title="Call now for Phoenix Pet Sitting"><img src="~/Images/Phonepng_32x32.png" style="max-width:32px;" alt="Phone" />(480) 703-4155</a></li>
+                <p style="text-align:center;">Phoenix Pet Sitting - Belly-Rub Specialists!  Bonded*Insured*Pet CPR & First Aid Certified  <a href="tel:+14807034155" title="Call now for Phoenix Pet Sitting"><img src="~/Images/Phonepng_32x32.png" style="max-width:32px; vertical-align:middle; " alt="Phone" /><span style="font-weight:bold;">(480) 703-4155</span></a></p>
+                    
+                        <a class="button2" href="~/Contact.cshtml#Contact" style="background-color:green;">Contact</a>
+                  
+                   
+                 
 
-                </ul>
+                        <a class="button2" href="https://www.powerpetsitter.net/login.aspx?bid=8468" style="background-color:green;">Create Profile</a>
+                    
+                        <a class="button2" href="https://www.powerpetsitter.net/client/check_zipcode.aspx?id=8468" style="background-color:dodgerblue;">Request Service</a>
+                 
 
             </nav>
 
-        </div>
+        
 
     </section>
 
@@ -114,92 +143,68 @@
         <section class="content-wrapper main-content clear-fix">
             @RenderBody()
             @*<div>
-                <p class="textSection" style="font-size:26px; color:white;">
-                    <br />   <br />   <br />   <br />   <br />   <br />   <br /><hr />
-                    Akira Web Solutions is an established web development company in Arizona, with clients throughout the US.
+                    <p class="textSection" style="font-size:26px; color:white;">
+                        <br />   <br />   <br />   <br />   <br />   <br />   <br /><hr />
+                        Akira Web Solutions is an established web development company in Arizona, with clients throughout the US.
 
-                    Call us for website design, development, graphic design services, and responsive website design for mobile-friendly websites.
+                        Call us for website design, development, graphic design services, and responsive website design for mobile-friendly websites.
 
-                    Don't pay for over priced web designers when you can have the professional quality and national experience right here for less with Akira Web Solutions.
-                </p>
+                        Don't pay for over priced web designers when you can have the professional quality and national experience right here for less with Akira Web Solutions.
+                    </p>
 
-            </div>*@
+                </div>*@
         </section>
     </div>
     <footer>
 
         @*<div class="content-wrapper">
 
-            <div class="float-left">
-                <ul class="sitemap">
-                    <li>
-                        <a href="~/Default" title=" Home - SEO, Website Design, Website Building">Home</a>
-                    </li>
-                    <li>
-                        <a href="~/About" title="About Our Website Design Team">About</a>
-                    </li>
-                    <li>
-                        <a href="~/WebDevelopment" title="About Our Website development">Web Development</a>
-                    </li>
-                    <li>
-                        <a href="~/WebDevelopment#Responsive Web Design" title="About Our Responsive Website Design">Responsive Website Design</a>
-                    </li>
-                </ul>
+                <div class="float-left">
+                    <ul class="sitemap">
+                        <li>
+                            <a href="~/Default" title=" Home - SEO, Website Design, Website Building">Home</a>
+                        </li>
+                        <li>
+                            <a href="~/About" title="About Our Website Design Team">About</a>
+                        </li>
+                        <li>
+                            <a href="~/WebDevelopment" title="About Our Website development">Web Development</a>
+                        </li>
+                        <li>
+                            <a href="~/WebDevelopment#Responsive Web Design" title="About Our Responsive Website Design">Responsive Website Design</a>
+                        </li>
+                    </ul>
 
-                <ul class="sitemap">
-                    <li>
-                        <a href="~/WebDevelopment#SEO" title="About Our Website SEO">Search Engine Optimization</a>
-                    </li>
-                    <li>
-                        <a href="~/Pricing" title="About Our Website Pricing">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="~/WebDevelopmentPortfolio" title="view our previous work and current clients">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="~/Contact" title="Contanct Information for Website Serices">Contact</a>
-                    </li>
-                </ul>
-                <ul class="sitemap">
-                    <li>
-                        <a href="~/WebDevelopment#ASP" title="About Our Website coded in ASP.NET">ASP.NET VS. Wordpress</a>
-                    </li>
-                    <li>
-                        <a href="~/FAQ" title="Commonly asked website questions and answers">FAQ</a>
-                    </li>
+                    <ul class="sitemap">
+                        <li>
+                            <a href="~/WebDevelopment#SEO" title="About Our Website SEO">Search Engine Optimization</a>
+                        </li>
+                        <li>
+                            <a href="~/Pricing" title="About Our Website Pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="~/WebDevelopmentPortfolio" title="view our previous work and current clients">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="~/Contact" title="Contanct Information for Website Serices">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="sitemap">
+                        <li>
+                            <a href="~/WebDevelopment#ASP" title="About Our Website coded in ASP.NET">ASP.NET VS. Wordpress</a>
+                        </li>
+                        <li>
+                            <a href="~/FAQ" title="Commonly asked website questions and answers">FAQ</a>
+                        </li>
 
-                </ul>
-            </div>
-        </div>*@
+                    </ul>
+                </div>
+            </div>*@
         <div class="footersocial" style="padding-top:5px;">
-            @*<a href="https://www.facebook.com/Akira-Web-Solutions-189302461673713/" title="our facebook">
-            <img src="~/Images/facebook_250x64.png" style="max-height:64px; max-width:258px;" alt="Facebook" />
-        </a>*@
-            <div class="fb-like" data-href="https://www.facebook.com/PhoenixPetSitting/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true" style="bottom:5px;"></div>
-            @*<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FAkiraWebSolutions%2F&width=140&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId" width="140" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>*@
-            @*<a href="https://twitter.com/Akira_WebDev" title="our twitter">
-            <img src="~/Images/twitter_64x64.png" style="max-height:64px; max-width:64px;" alt="Twitter" />
-        </a>*@
-            @*<a href="https://twitter.com/Akira_WebDev?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow &#64;Akira_WebDev</a>*@
+           
+            <div class="fb-like" data-href="https://www.facebook.com/PhoenixPetSitting/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true" style="bottom:5px;"></div>
             <a href="https://twitter.com/phoenixpetsit?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow &#64 phoenixpetsit</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            @*<script src="//platform.linkedin.com/in.js" type="text/javascript">    lang: en_US</script>
-            <script type="IN/FollowCompany" data-id="18527891" data-counter="top">
-            </script>
-            <a href="https://www.instagram.com/akira_web_solutions/" title="our instagram">
-                <img src="~/Images/instagram_64x64.png" style="max-height:64px; max-width:64px;" alt="Instagram" />
-            </a>*@
-
-            @*<a href="https://github.com/akira796?tab=repositories" title="our github">
-            <img src="~/Images/GitHub-Logo_250x64.png" style="max-height:64px; max-width:258px;" alt="Github" />
-        </a>*@
-            @*<a href="https://www.tumblr.com/blog/akirawebsolutions" title="our tumblr">
-            <img src="~/Images/Tumblr-icon_64x64.png" style="max-height:64px; max-width:64px;" alt="Tumblr" />
-        </a>*@
-            @*<a href="https://www.linkedin.com/in/taylorbishop/" title="our linkedin">
-            <img src="~/Images/llinkedin-icon_64x64.png" style="max-height:64px; max-width:64px;" alt="Liknedin" />
-        </a>*@
+            <div class="g-follow" data-href="https://plus.google.com/+PhoenixPetSitting" data-rel="relationshipType"></div>
 
         </div>
         <div class="float-right">
@@ -214,7 +219,7 @@
 <script>!function (n) { n(function () { n("nav ul li a:not(:only-child)").click(function (i) { n(this).siblings(".nav-dropdown").toggle(), n(".nav-dropdown").not(n(this).siblings()).hide(), i.stopPropagation() }), n("html").click(function () { n(".nav-dropdown").hide() }), n("#nav-toggle").click(function () { n("nav ul").slideToggle() }), n("#nav-toggle").on("click", function () { this.classList.toggle("active") }) }) }(jQuery);</script>
 <div id="fb-root"></div>
 <script>
-(function (d, s, id) {
+    (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
@@ -222,3 +227,6 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
