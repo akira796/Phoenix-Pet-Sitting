@@ -103,13 +103,13 @@ h5, h6 {
 
 .content-wrapper {
     margin: 0 auto;
-    max-width: 1680px
+    /*max-width: 1680px*/
 }
 
 #body {
-    background-color: #efeeef;
+    /*background-color: #efeeef;*/
+    background-color: white;
     clear: both;
-    padding-bottom: 35px
 }
 
 header .content-wrapper {
@@ -595,9 +595,10 @@ a.textSection {
 }
 
 .navigation {
-    height: 80px;
+    height: 140px;
     background-color: #000;
-    color: silver
+    color: silver;
+    text-align: center;
 }
 
 .brand {
@@ -614,7 +615,7 @@ a.textSection {
     }
 
 nav {
-    float: right
+    
 }
 
     nav ul {
@@ -941,6 +942,87 @@ body {
     .button:hover {
         background-color: #555
     }
+
+  
+        p {
+            text-indent: 50px;
+            text-align: justify;
+            letter-spacing: 1px;
+            padding: 25px;
+            margin-bottom:0px;
+        }
+        h1,h2,h3,h4{
+            text-align:center;
+            color:dodgerblue;
+            margin-top:0px;
+        }
+
+
+
+
+#ImgMenuHeader {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    background: rgba(0,0,0,.4);
+    margin-left: 4px;
+    margin-bottom: 0px;
+    max-width: 500px;
+    padding: 0px;
+    text-indent: 0px;
+    vertical-align: top;
+}
+    #page-wrap .top{
+        margin-top:0px;
+    }
+
+    table.tables td {
+        text-align: center;
+        padding: 0px 0px 0px 0px;
+        
+    }
+    /*#areacodes {
+        width: 33%;
+        display: inline-flex;
+        vertical-align: top;
+    }*/
+
+
+
+a.button2 {
+    display: inline-block;
+    padding: 0.5em 3em;
+    border: 0.16em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.15s;
+}
+
+    a.button2:hover {
+    color: #DDDDDD;
+    border-color: #DDDDDD;
+    }
+
+    a.button2:active {
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+    }
+
+@media all and (max-width:30em) {
+     a.button2 {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+
+
 
 
 
