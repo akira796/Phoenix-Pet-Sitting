@@ -50,7 +50,13 @@
     @*<title>@Page.Title - Akira Web Solutions</title>*@
     <link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <link rel="manifest" href="Images/site.webmanifest">
+    <link rel="mask-icon" href="Images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/jquery-ui-1.10.3.js"></script>
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
@@ -76,64 +82,25 @@
 
     </style>
     <section class="navigation">
-        @*<div class="nav-container">
-            <div class="brand">
-                <a href="~/Default" title=" Home - Phoenix Pet Sitting Services">
+        <img src="~/Images/LOGO_PhoenixPetSitting_Rectangular.png" style="max-width:100%;"/>
+        <a class="button2" href="~/Contact.cshtml#Contact" style=" background-color:goldenrod;">Schedule a FREE Initial Consultation</a>
 
-                <img src="~/Images/4e00196f423d6e8f3296ceda1f54031c.png" alt="Phoenix Pet Sitting Logo" style="width:124px;" />
-                </a>
-            </div>*@
-            <nav>
-                @*<div class="nav-mobile"><a id="nav-toggle" href="#!" title="Expand"><span></span></a></div>
-                <ul class="nav-list">*@
-                    @*<li>
-                        <a href="~/Default" title=" Home - Phoenix Pet Sitting Services">Home</a>
-                    </li>
-                    <li>
-                        <a href="~/About" title="About Our Pet Sitting Team">About</a>
-                    </li>
-                    <li>
-                        <a href="#!" title="Expand">Services</a>
-                        <ul class="nav-dropdown">
-                            <li>
-                                <a href="~/WebDevelopment" title="Website Development Information"></a>
-                            </li>
-                            <li>
-                                <a href="~/WebDevelopment#Responsive Web Design" title="Responsive Website Design Information"></a>
-                            </li>
 
-                            <li>
-                                <a href="~/WebDevelopment#SEO" title="SEO Website Information"></a>
-                            </li>
-                            <li>
-                                <a href="~/WebDevelopment#ASP" title="ASP.NET Website Information"></a>
-                            </li>
-                            <li>
-                                <a href="~/WebDevelopment#SSL" title="SSL Website Information"></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#four">Rates</a>
-                    </li>
-                    <li>
-                        <a href="~/Testimonials">Testimonials</a>
-                    </li>*@
-                <p style="text-align:center;">Phoenix Pet Sitting - Belly-Rub Specialists!  Bonded*Insured*Pet CPR & First Aid Certified  <a href="tel:+14807034155" title="Call now for Phoenix Pet Sitting"><img src="~/Images/Phonepng_32x32.png" style="max-width:32px; vertical-align:middle; " alt="Phone" /><span style="font-weight:bold;">(480) 703-4155</span></a></p>
-                    
-                <a class="button2" href="~/Contact.cshtml#Contact" style="background-color:green;">Schedule a FREE Initial Consultation</a>
-                  
-                   
-                 
 
-                        <a class="button2" href="https://www.powerpetsitter.net/login.aspx?bid=8468" style="background-color:green;">Create Profile</a>
-                    
-                        <a class="button2" href="https://www.powerpetsitter.net/client/check_zipcode.aspx?id=8468" style="background-color:dodgerblue;">Request Service</a>
-                 
 
-            </nav>
+        <a class="button2" href="https://www.powerpetsitter.net/login.aspx?bid=8468" style="background-color:goldenrod;">Create Profile</a>
 
-        
+        <a class="button2" href="https://www.powerpetsitter.net/client/check_zipcode.aspx?id=8468" style="background-color:goldenrod;">Request Service</a>
+        <nav>
+
+            @*<p style="text-align:center; margin-top:0px;">Phoenix Pet Sitting - Belly-Rub Specialists!  Bonded*Insured*Pet CPR & First Aid Certified  <a href="tel:+14807034155" title="Call now for Phoenix Pet Sitting"><img src="~/Images/Phonepng_32x32.png" style="max-width:32px; vertical-align:middle; " alt="Phone" /><span style="font-weight:bold;">(480) 703-4155</span></a></p>*@
+
+
+
+
+        </nav>
+
+
 
     </section>
 
@@ -142,74 +109,33 @@
         @RenderSection("featured", required: false)
         <section class="content-wrapper main-content clear-fix">
             @RenderBody()
-            @*<div>
-                    <p class="textSection" style="font-size:26px; color:white;">
-                        <br />   <br />   <br />   <br />   <br />   <br />   <br /><hr />
-                        Akira Web Solutions is an established web development company in Arizona, with clients throughout the US.
-
-                        Call us for website design, development, graphic design services, and responsive website design for mobile-friendly websites.
-
-                        Don't pay for over priced web designers when you can have the professional quality and national experience right here for less with Akira Web Solutions.
-                    </p>
-
-                </div>*@
+            
         </section>
     </div>
     <footer>
 
-        @*<div class="content-wrapper">
+        
+        <div class="footersocial" style="padding-top:5px; padding-right:0px; text-align:center;">
 
-                <div class="float-left">
-                    <ul class="sitemap">
-                        <li>
-                            <a href="~/Default" title=" Home - SEO, Website Design, Website Building">Home</a>
-                        </li>
-                        <li>
-                            <a href="~/About" title="About Our Website Design Team">About</a>
-                        </li>
-                        <li>
-                            <a href="~/WebDevelopment" title="About Our Website development">Web Development</a>
-                        </li>
-                        <li>
-                            <a href="~/WebDevelopment#Responsive Web Design" title="About Our Responsive Website Design">Responsive Website Design</a>
-                        </li>
-                    </ul>
-
-                    <ul class="sitemap">
-                        <li>
-                            <a href="~/WebDevelopment#SEO" title="About Our Website SEO">Search Engine Optimization</a>
-                        </li>
-                        <li>
-                            <a href="~/Pricing" title="About Our Website Pricing">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="~/WebDevelopmentPortfolio" title="view our previous work and current clients">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="~/Contact" title="Contanct Information for Website Serices">Contact</a>
-                        </li>
-                    </ul>
-                    <ul class="sitemap">
-                        <li>
-                            <a href="~/WebDevelopment#ASP" title="About Our Website coded in ASP.NET">ASP.NET VS. Wordpress</a>
-                        </li>
-                        <li>
-                            <a href="~/FAQ" title="Commonly asked website questions and answers">FAQ</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>*@
-        <div class="footersocial" style="padding-top:5px;">
-           
             <div class="fb-like" data-href="https://www.facebook.com/PhoenixPetSitting/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true" style="bottom:5px;"></div>
             <a href="https://twitter.com/phoenixpetsit?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow &#64 phoenixpetsit</a>
+            <a class="twitter-share-button"
+               href="https://twitter.com/intent/tweet?text=Hello%20world"
+               data-size="small">
+                Tweet
+            </a>
             <div class="g-follow" data-href="https://plus.google.com/+PhoenixPetSitting" data-rel="relationshipType"></div>
+
+            <p style="text-align:center; text-indent:0px; padding-bottom:0px; padding-top:12.5px;">&copy; @DateTime.Now.Year - Phoenix Pet Sitting. All Rights Reserved.</p>
+            <p style="text-align:center; text-indent:0px; padding-top:0px; padding-bottom:0px;">
+                Design by
+                <a href="https://www.akirawebsolutions.com" style="padding:0px;">AkiraWebSolutions.com </a>
+            </p>
 
         </div>
         <div class="float-right">
 
-            <p>&copy; @DateTime.Now.Year - Phoenix Pet Sitting. All Rights Reserved.</p>
+            
         </div>
     </footer>
     @RenderSection("Scripts", required: false)
