@@ -595,7 +595,7 @@ a.textSection {
 }
 
 .navigation {
-    height: 140px;
+    /*height: 140px;*/
     background-color: #000;
     color: silver;
     text-align: center;
@@ -955,6 +955,7 @@ body {
             text-align:center;
             color:dodgerblue;
             margin-top:0px;
+
         }
 
 
@@ -1023,7 +1024,34 @@ a.button2 {
 
 
 
+img.submenuimg {
+    width: 75%;
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+}
+img.sectionimg {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    max-width: 325px;
+}
+p.subsectiontext, h3.subsectiontext, h2.subsectiontext {
+    max-width: 60%;
+    margin:auto;
+}
 
 
+@media only screen and (max-width:798px) {
+    img.submenuimg {
+        width: 100%;
+        border: 2px solid #ccc;
+        background-color: #eee;
+        border-radius: 5px;
+    }
+    p.subsectiontext, h3.subsectiontext, h2.subsectiontext {
+        max-width: 100%;
+    }
+}
 
 
