@@ -6,13 +6,8 @@
 
 <style>
     #body {
-        /*background: url('Images/background1.jpeg') left 0px top -12px no-repeat,
-            url('Images/Contact.jpeg') left 0px top 1400px no-repeat,
-            url('Images/Rates.jpg') left 0px top 2900px no-repeat,
-            url('Images/Service Area.jpeg') left 0px top 4400px no-repeat,
-            url('Images/Recommended.jpeg') left 0px top 5900px no-repeat,
-            url('Images/Phoenix Pet Sitting Services.jpg') left 0px top 7400px no-repeat;*/
-        
+       
+        font-family:'Times New Roman';
         color:black;
         background-color:white;
     }
@@ -27,64 +22,57 @@
             text-align:center;
             color:dodgerblue;
             margin-top:0px;
+            font-family:'Palatino Linotype';
         }
     #backone {
         background-image:url('Images/background1.jpeg');
         background-size:cover;
-        /*margin-bottom: 13.1%;*/
         font-size: 20px;
-        /*height: 1418px;*/
         overflow-wrap: break-word;
     }
     #backtwo {
         font-size: 20px;
-        /*height: 1500px;*/
-        /*background-image:url('Images/Contact.jpeg');*/
+        
         
     }
     #backthree {
        
         font-size: 20px;
-        /*height: 3000px;*/
-        /*background: url('Images/Service Area.jpeg') left 0px top repeat;*/
+        
     }
     #backfour {
         
         font-size: 20px;
-        /*height: 1500px;*/
-        /*background: url('Images/Recommended.jpeg') left 0px top repeat*/
+        
     }
     #backfive {
         
         font-size: 20px;
-        /*height: 3000px;*/
-        /*background: url('Images/Phoenix Pet Sitting Services.jpg') left 0px top repeat;*/
+        
     }
     #backsix {
         
         font-size: 20px;
-        /*height: 1482px;*/
+       
     }
 
     #ImgMenuHeader {
         text-align: center;
         font-size: 22px;
         font-weight: bold;
-        background: rgba(0,0,0,.4);
-        /*margin-left:23px;
-        margin-bottom: 0px;*/
-        margin:auto;
-        max-width:500px;
-        padding:0px;
-        text-indent:0px;
-        vertical-align:top;
+        background: rgba(248,255,240,.4);
         
+        margin: auto;
+        max-width: 75%;
+        padding: 0px;
+        text-indent: 0px;
+        vertical-align: top;
     }
     #page-wrap .top{
         margin-top:0px;
     }
     #topalt{
-        color:#f8fff0;
+        color:goldenrod;
     }
     table.tables td {
         text-align: center;
@@ -110,6 +98,12 @@
         text-align: right;
         
     }
+    submenuimg {
+        width: 100%;
+        border: 2px solid #ccc;
+        background-color: #eee;
+        border-radius: 5px;
+    }
   
 </style>
 
@@ -124,17 +118,12 @@
     <div id="backone">
         <div style="text-align:center;" id="top">
 
-            <div style="display:inline-flex">
+            @*<div style="display:inline-flex">
                 <img src="~/Images/4e00196f423d6e8f3296ceda1f54031c.png" style="max-width:64px; max-height:64px;" /><h1 style="margin-top:0px;">@Page.Title</h1>
                 <img src="~/Images/4e00196f423d6e8f3296ceda1f54031c.png" style="max-width:64px; max-height:64px;" />
-            </div>
-            <h2 style="background-color:dodgerblue; color:white;"> In-Home Pet Sitting, Dog Walking Pet Express Taxi Service and Belly-Rub Specialists</h2>
-            <p id="ImgMenuHeader" style="max-width:90%; margin:auto; ">
-                Our In-Home Pet Sitting, Dog Walking and Pet Express Taxi services allow your pets to remain in their own comfortable environment and on their own schedule while you are away at work or out-of-town. @*We provide professional, expert care of your pets, home and property.*@
-                Our Mission is to provide your pets with the same excellent care, attention and devotion you provide them on a regular basis. We conduct business with the highest integrity, fulfilling our responsibilities to our clients to ensure your confidence and trust. We strive to earn your commitment to us for the future.
-
-
-            </p>
+            </div>*@
+            <h2 style="background-color:dodgerblue; color:white; font-family:'Palatino Linotype';"><i> In-Home Pet Sitting, Dog Walking and Pet Express Taxi Service</i></h2>
+           
         </div>
 
         <div style="text-align:center;">
@@ -142,8 +131,7 @@
                 <div style="width:100%;">
                     <p id="ImgMenuHeader">About Us</p>
                     <a href="#About">
-                        <img src="~/Images/Contact.jpeg" alt="Water Heater Repair Replacement Installation" style="width:100%; border: 2px solid #ccc;background-color: #eee;
-    border-radius: 5px; max-height:250px; max-width:500px;" />
+                        <img src="~/Images/Contact.jpeg" class="submenuimg" alt=""  />
                     </a>
                 </div>
             </div>
@@ -153,8 +141,7 @@
                 <div style="width:100%;">
                     <p id="ImgMenuHeader">Services</p>
                     <a href="#Services">
-                        <img src="~/Images/Phoenix Pet Sitting Services.jpg" alt="Garbage Disposal Repair Replacement Installation" style="width:100%; border: 2px solid #ccc;background-color: #eee;
-max-height:250px; max-width:500px; border-radius: 5px;" />
+                        <img src="~/Images/Phoenix Pet Sitting Services.jpg" alt=""  class="submenuimg" />
                     </a>
                 </div>
             </div>
@@ -163,8 +150,7 @@ max-height:250px; max-width:500px; border-radius: 5px;" />
                 <div style="width:100%;">
                     <p id="ImgMenuHeader">Rates</p>
                     <a href="#Rates">
-                        <img src="~/Images/Z-Cat w Money - XSmall.JPG" alt="Other Bishop Fine Plumbing Services" style="width:100%; border: 2px solid #ccc;background-color: #eee;
-max-height:250px; max-width:500px; border-radius: 5px;" />
+                        <img src="~/Images/F-Saltwater Fish_Blue_XSmall.jpg" alt=""  class="submenuimg" />
                     </a>
                 </div>
             </div>
@@ -173,8 +159,7 @@ max-height:250px; max-width:500px; border-radius: 5px;" />
                 <div style="width:100%;">
                     <p id="ImgMenuHeader">Service Area</p>
                     <a href="#ServiceArea">
-                        <img src="~/Images/Service Area.jpeg" alt="Water Heater Repair Replacement Installation" style="width:100%; border: 2px solid #ccc;background-color: #eee;
-    border-radius: 5px; max-height:250px; max-width:500px;" />
+                        <img src="~/Images/Phoenix by dayE.jpg" alt=""  class="submenuimg" />
                     </a>
                 </div>
             </div>
@@ -184,8 +169,7 @@ max-height:250px; max-width:500px; border-radius: 5px;" />
                 <div style="width:100%;">
                     <p id="ImgMenuHeader">Contact Us</p>
                     <a href="~/Contact.cshtml#Contact">
-                        <img src="~/Images/Z-Black Rat with Computer Mouse - XSmall.JPG" alt="Garbage Disposal Repair Replacement Installation" style="width:100%; border: 2px solid #ccc;background-color: #eee;
-max-height:250px; max-width:500px; border-radius: 5px;" />
+                        <img src="~/Images/Z-Black Rat with Computer Mouse - XSmall.JPG" alt=""  class="submenuimg" />
                     </a>
                 </div>
             </div>
@@ -194,8 +178,7 @@ max-height:250px; max-width:500px; border-radius: 5px;" />
                 <div style="width:100%;">
                     <p id="ImgMenuHeader">Our Team</p>
                     <a href="~/Contact.cshtml#ourTeam">
-                        <img src="~/Images/Phoenix Pet Sitting About.jpg" alt="Other Bishop Fine Plumbing Services" style="width:100%; border: 2px solid #ccc;background-color: #eee;
-max-height:250px; max-width:500px; border-radius: 5px;" />
+                        <img src="~/Images/Phoenix Pet Sitting About.jpg" alt=""  class="submenuimg" />
                     </a>
                 </div>
             </div>
@@ -204,8 +187,7 @@ max-height:250px; max-width:500px; border-radius: 5px;" />
                 <div style="width:100%;">
                     <p id="ImgMenuHeader">Testimonials</p>
                     <a href="~/Contact.cshtml#Testimonials">
-                        <img src="~/Images/Testimonials.jpeg" alt="Water Heater Repair Replacement Installation" style="width:100%; border: 2px solid #ccc;background-color: #eee;
-    border-radius: 5px; max-height:250px; max-width:500px;" />
+                        <img src="~/Images/Testimonials.jpeg" alt=""  class="submenuimg" />
                     </a>
                 </div>
             </div>
@@ -214,8 +196,7 @@ max-height:250px; max-width:500px; border-radius: 5px;" />
                 <div style="width:100%;">
                     <p id="ImgMenuHeader">Recommended Products</p>
                     <a href="~/Contact.cshtml#Recommended">
-                        <img src="~/Images/Recommended.jpeg" alt="Garbage Disposal Repair Replacement Installation" style="width:100%; border: 2px solid #ccc;background-color: #eee;
-max-height:250px; max-width:500px; border-radius: 5px;" />
+                        <img src="~/Images/Recommended.jpeg" alt=" "  class="submenuimg" />
                     </a>
                 </div>
             </div>
@@ -224,8 +205,7 @@ max-height:250px; max-width:500px; border-radius: 5px;" />
                 <div style="width:100%;">
                     <p id="ImgMenuHeader">Follow Us!</p>
                     <a href="~/Contact.cshtml#Follow">
-                        <img src="~/Images/D-2 Labs Retrieving Stick - SMALL.JPG" alt="Other Bishop Fine Plumbing Services" style="width:100%; border: 2px solid #ccc;background-color: #eee;
-                    max-height:250px; max-width:500px; border-radius: 5px;" />
+                        <img src="~/Images/D-2 Labs Retrieving Stick - SMALL.JPG" alt=""  class="submenuimg" />
                     </a>
                 </div>
             </div>
@@ -248,31 +228,29 @@ max-height:250px; max-width:500px; border-radius: 5px;" />
 
 
             <div style="width:100%;">
-                <img src="~/Images/F-Saltwater Fish_Blue_XSmall.jpg" alt="Other Bishop Fine Plumbing Services" style="border: 2px solid #ccc;background-color: #eee;
-                    border-radius: 5px;" align="right" />
-                <p id="subsectionTextLeft">
+                <img src="~/Images/F-Saltwater Fish_Blue_XSmall.jpg" alt="" class="sectionimg" align="right" />
+                <p id="subsectionTextLeft" class="subsectiontext">
                     Our In-Home Pet Sitting, Dog Walking and Pet Express Taxi services allow your pets to remain in their own comfortable environment and on their own schedule while you are away at work or out-of-town.
                     We provide professional, expert care of your pets, home and property.
                 </p>
 
 
-                <p>
+                <p class="subsectiontext">
                     We are a full service and family owned and operated pet sitting company.
                     Our family of pet sitters is made up of professionals with a high affinity for all types of pets.
                     We recognize that no one knows your pets better than you, so every service we offer is customized to provide the best pet sitting experience possible.
                     Additionally, each and every member of our pet sitting family is bonded, insured, background checked and Pet CPR and First Aid Certified!
                 </p>
+                
+                <img src="~/Images/RP-Angus.jpg" alt="" class="sectionimg" align="left" />
 
-                <img src="~/Images/RP-Angus.jpg" alt="Other Bishop Fine Plumbing Services" style="border: 2px solid #ccc;background-color: #eee;
-                    border-radius: 5px; max-width:325px;" align="left" />
-
-                <p>
+                <p class="subsectiontext">
                     We provide expert care to Dogs, Cats, Rabbits, Ferrets, Salt and Freshwater Fish, Birds, Reptiles and Horses, and more
                     – We love them all! When you are away for work or recreation, you can relax and enjoy peace of mind knowing that your pets will receive the best pet sitting services available with customized attention and quality care in every visit.
                     We want to be your number one pet sitting choice in the Greater Phoenix Area.
                 </p>
 
-                <p>
+                <p class="subsectiontext">
                     Call us now to schedule your FREE INTIAL CONSULTATION where we will customize our services to the individual needs of your pets!
                 </p>
             </div>
@@ -286,27 +264,27 @@ max-height:250px; max-width:500px; border-radius: 5px;" />
             <p><a href="#top" id="topalt">Top</a></p>
             <div style="width:100%;">
 
-                <p id="subsectionTextLeft">
+                <p id="subsectionTextLeft" class="subsectiontext">
 
                     Our family of pet sitters is made up of professionals with a high affinity for all types of pets. We recognize that no one knows your pets better than you, so every service we offer is fully customized to provide the best care possible. In addition, we are available by phone 24/7 while your pets are in our care.
                 </p>
 
-                <p>
+                <p class="subsectiontext">
                     Each and every member of our pet sitting family is BONDED, INSURED and PET CPR and FIRST AID CERTIFIED!
                 </p>
                 <h3>Pet Sitting Services</h3>
-                <p>
+                <p class="subsectiontext">
                     When you must be away we provide your pets with the same excellent care, devotion and attention you give them on a regular basis, while expertly caring for your home and property. We provide frequent communication and updates so you can relax and enjoy your trip, knowing your pets’ needs are well-cared for.
                 </p>
 
-                <p>
+                <p class="subsectiontext">
                     We offer Live-In Service and Overnights. We also offer 120 – 60 – 45 – 30 or 20 Minute Visits. These visits can be done in any combination; once, twice or three times per day.
                 </p>
 
                 <div style="text-align:center; margin:auto;">
 
 
-                    <img src="~/Images/H-Horses_2 Brown_Small.jpg" alt="Other Bishop Fine Plumbing Services" style="border: 2px solid #ccc;background-color: #eee;
+                    <img src="~/Images/H-Horses_2 Brown_Small.jpg" alt="" style="border: 2px solid #ccc;background-color: #eee;
                     border-radius: 5px; max-width:33%; max-height:285px;" />
                     <img src="~/Images/Black Labrador Fetching Stick from the Sea_Large.jpg" alt="Other Bishop Fine Plumbing Services" style="border: 2px solid #ccc;background-color: #eee;
                     border-radius: 5px; max-width:33%;  max-height:285px;" />
@@ -316,14 +294,16 @@ max-height:250px; max-width:500px; border-radius: 5px;" />
             </div>
 
 
-            <div style="background-color:#f8fff0;" >
-                <h3>All Pet Sitting Services Include:</h3>
-                <img src="~/Images/D-Husky w Stick - XSmall.JPG" alt="Other Bishop Fine Plumbing Services" style="border: 2px solid #ccc;background-color: #eee;
-                    border-radius: 5px;" align="right" />
+            <div style="background-color:#f8fff0;">
+                <h3 class="subsectiontext">All Pet Sitting Services Include:</h3>
+                <img src="~/Images/FER-Ferrets - XSmall.JPG" alt="" class="sectionimg" align="right" />
+
+                
                 <ul>
                     <li>
                         Love, attention and play time
                     </li>
+
                     <li>
                         Dog walks
                     </li>
@@ -364,56 +344,51 @@ max-height:250px; max-width:500px; border-radius: 5px;" />
                         And more…
                     </li>
                 </ul>
-                <p>Of course every visit includes Belly-Rubs and Ear (or Rear) Scratches at no additional charge.</p>
+
+                <p class="subsectiontext">Of course every visit includes Belly-Rubs and Ear (or Rear) Scratches at no additional charge.</p>
             </div>
 
-            
-                <h3>Overnight Services</h3>
-                <img src="~/Images/D-Boxer Sleeping on Couch - XSmall.jpg" alt="Other Bishop Fine Plumbing Services" style="border: 2px solid #ccc;background-color: #eee;
-                    border-radius: 5px; max-width:325px;" align="left" />
-                <img src="~/Images/C-Calico Cat - XSmall.jpg" alt="Other Bishop Fine Plumbing Services" style="border: 2px solid #ccc;background-color: #eee;
-                    border-radius: 5px;" align="right" />
-                <p>
-                    Allows your pets to enjoy the comfort and security of their own home while you’re away. We can provide specialized attention to puppies, special needs and elderly dogs. We offer three levels of Overnight Service for your pets and home to meet different needs. We will arrive by 8pm and stay until 7am. We can also add a mid-day potty break or walk. If you desire we can also provide an Extended Overnight where we will arrive earlier in the evening, usually by 5pm and stay over until 7 am. The above list of services is included in our Overnight Service.
-                </p>
 
-                <h3>Live-In Services</h3>
-                <p>
-                    Our most comprehensive and stress-free service for you and your pets. This service includes the above list plus full time care for your home and pets. We will stay in your home each day with two three-hour breaks which allow us to care for our own homes, families and pets. We do ask you to please schedule this service two or more weeks in advance if possible.
-                </p>
-            
+            <h3 class="subsectiontext">Overnight Services</h3>
+            <img src="~/Images/D-Boxer Sleeping on Couch - XSmall.jpg" alt="" class="sectionimg" align="left" />
+
+            <p class="subsectiontext">
+                Allows your pets to enjoy the comfort and security of their own home while you’re away. We can provide specialized attention to puppies, special needs and elderly dogs. We offer three levels of Overnight Service for your pets and home to meet different needs. We will arrive by 8pm and stay until 7am. We can also add a mid-day potty break or walk. If you desire we can also provide an Extended Overnight where we will arrive earlier in the evening, usually by 5pm and stay over until 7 am. The above list of services is included in our Overnight Service.
+            </p>
+            <img src="~/Images/C-Calico Cat - XSmall.jpg" alt="" class="sectionimg" align="right" />
+            <h3 class="subsectiontext">Live-In Services</h3>
+            <p class="subsectiontext">
+                Our most comprehensive and stress-free service for you and your pets. This service includes the above list plus full time care for your home and pets. We will stay in your home each day with two three-hour breaks which allow us to care for our own homes, families and pets. We do ask you to please schedule this service two or more weeks in advance if possible.
+            </p>
+            <br /> <br />
 
             <div style="background-color:#f8fff0;">
-                <h3>Daily Service</h3>
-                <h4>Potty 'N Play Breaks</h4>
-                <img src="~/Images/D-Merle Border Collie w Frisbee - XSmall.JPG" style="border: 2px solid #ccc;background-color: #eee;
-                    border-radius: 5px; max-width:325px;" align="left" />
-                <img src="~/Images/D-Yorkshire Terrier - XSmall.JPG" style="border: 2px solid #ccc;background-color: #eee;
-                    border-radius: 5px;" align="right" />
-                <p>
+                <h3 >Daily Service</h3>
+                <h4 class="subsectiontext">Potty 'N Play Breaks</h4>
+                <img src="~/Images/D-Merle Border Collie w Frisbee - XSmall.JPG" class="sectionimg" align="left" />
+                <img src="~/Images/D-Yorkshire Terrier - XSmall.JPG" class="sectionimg" align="right" />
+                <p class="subsectiontext">
                     Our 20 minute Potty ‘N Play Break is a daily service designed for pets that need be taken outside on a regular schedule for fresh air, change of environment and to potty. We use lots of patience, encouragement and praise, with any extra time spent for exploration and play. This service is very beneficial for seniors, puppies and other pets that tend to “get into trouble” whether from loneliness or boredom, but giving them some playtime to look forward to while you are at work.
                 </p>
 
-                <h4>Dog Walking</h4>
-                <p>
+                <h4 class="subsectiontext">Dog Walking</h4>
+                <p class="subsectiontext">
                     Imagine never getting to leave your house day after day. Even if you have a yard, dogs need daily exercise for both mental and physical stimulation. Special attention is given to customize our service, in close coordination with you, to give your pets an enjoyable outing, especially during the hot summer months in our Arizona Desert. We take special care that each pet is exercised safely and appropriately for his or her breed, age and individual personality.
                 </p>
             </div>
             <h3> Other Services:</h3>
-            <h4>Horses</h4>
-            <img src="~/Images/H-Horse_Sideways_XSmall.jpg" style="border: 2px solid #ccc;background-color: #eee;
-                    border-radius: 5px; width:20%;" align="left" />
-            <p>Please call to see if our services are a match for your horses’ needs. Available horse care visits are 30-45-60-120 Minute visits. We can provide Live-In or Overnight services as well.</p>
+            <h4 class="subsectiontext">Horses</h4>
+            <img src="~/Images/H-Horse_Sideways_XSmall.jpg" class="sectionimg" align="right" />
+            <p class="subsectiontext">Please call to see if our services are a match for your horses’ needs. Available horse care visits are 30-45-60-120 Minute visits. We can provide Live-In or Overnight services as well.</p>
 
 
-            
-                <img src="~/Images/D-Mastiff in Car.jpg" style="border: 2px solid #ccc;background-color: #eee;
-                    border-radius: 5px; overflow:hidden; width:20%; " align="right"  />
-            <h4> Pet Express Taxi</h4>
-            
-            <p>
+
+            <img src="~/Images/D-Mastiff in Car.jpg" class="sectionimg" align="left" />
+            <h4 class="subsectiontext"> Pet Express Taxi</h4>
+
+            <p class="subsectiontext">
                 The Pet Express can transport your pet to just about any destination you may need. Our service includes picking up and delivering needed pet supplies, getting your pet to the airport, veterinarian or groomer safely and on-time for their appointment. We can accompany your pet throughout the visit if desired. We can also coordinate communication between you and your vet or groomer, as needed. We will then return your pet home and get him or her settled in to their normal environment with fresh food and water to await your arrival.
-                <br/><br/><br />
+                <br /><br /><br />
             </p>
         </div>
     </div>
@@ -522,34 +497,45 @@ max-height:250px; max-width:500px; border-radius: 5px;" />
             </div>
             </div>
         <div style="text-align:center;">
-            <h2>Additional Information</h2>
-            <h3>*Discounts</h3>
-            <p>
-                Get 10% OFF visits and walks when you schedule a minimum of 3 visits in a seven day period. (Discount does not apply to Pet Express Pet Taxi service.)
+            <h2 class="subsectiontext">Additional Information</h2>
+            <h3 class="subsectiontext">*Discounts</h3>
+            <img src="~/Images/FER-Ferrets - XSmall.JPG" class="sectionimg" align="right" />
+            
+            <p class="subsectiontext">
+                Get 10% OFF visits and walks when you schedule a minimum of 3 visits in a seven day period. (Discount does not apply to Pet Express Pet Taxi service.)<br/>
+
             </p>
-            <h3>Referrals</h3>
-            <p>
+
+            <h3  class="subsectiontext">Referrals</h3>
+            <p class="subsectiontext">
                 Refer a new client who schedules 3 or more visits and receive $10.00 OFF your next service.
             </p>
-
+            <br/>
 
             <div style="background-color:#f8fff0;">
-                
-            <h3>Methods Of Payment</h3>
-            <p>
-                We accept Cash, Most Major Credit and Debit Cards as well as ACH Payments.
-            </p>
-            <h3>Cancellation Policy</h3>
-            <p>
-                <span style="font-weight:bold;"> 48 Hours or Less</span>
-                prior to any service date: 50% of service total will be refunded.
-            </p>
-            <p>
-                <span style="font-weight:bold;"> More Than 48 Hours</span>
-                Prior to service date: 100% Full Refund.
-            </p>
+
+                <h3 class="subsectiontext">Methods Of Payment</h3>
+                <img src="~/Images/Z-Cat w Money - XSmall.JPG" class="sectionimg" align="left" />
+                <div style="text-align:center; max-width:60%; margin:auto;">
+                    <img src="~/Images/Major-Credit-Card-Logo-PNG-Image.png" style=" max-width:325px;" />
+                </div>
+
+                <p style="text-align:left;" class="subsectiontext">
+                    We accept Cash, Most Major Credit and Debit Cards as well as ACH Payments.<br />
+
+                </p>
+                <h3 class="subsectiontext">Cancellation Policy</h3>
+                <p style="text-align:left;" class="subsectiontext">
+                    <span style="font-weight:bold;"> 48 Hours or Less</span>
+                    prior to any service date: 50% of service total will be refunded.
+                </p>
+                <p style="text-align:left;" class="subsectiontext">
+                    <span style="font-weight:bold;"> More Than 48 Hours</span>
+                    Prior to service date: 100% Full Refund.
+                </p>
+                <br /><br /><br />
+            </div>
         </div>
-    </div>
 
     <div id="backfive">
         <div>
@@ -557,16 +543,16 @@ max-height:250px; max-width:500px; border-radius: 5px;" />
             <p><a href="#top" id="topalt" >Top</a></p>
             <div style="display:inline-block; max-width:50%;">
                 <div>
-                    <img src="~/Images/Phoenix Pet Sitting Service Map.JPG" style="max-width:100%;" />
+                    <img src="~/Images/Phoenix Pet Sitting Service Map.JPG" style="max-width:100%; max-height:835px;" />
                 </div>
             </div>
-            <div style="display:inline-block; vertical-align:top; max-width:45%; background-color:#f8fff0;">
+            <div style="display:inline-block; vertical-align:top; max-width:50%; background-color:#f8fff0;">
                 <div>
 
                     <p>Phoenix Pet Sitting is pleased to provide our customized services to the Greater Phoenix Area.</p>
                     <p>If your zip code is not listed below, please contact us — we may serve your area.</p>
 
-                    <img src="~/Images/Phoenix by dayE.jpg" alt="Other Bishop Fine Plumbing Services" style="border: 2px solid #ccc;background-color: #eee;
+                    <img src="~/Images/Phoenix by dayE.jpg" alt="" style="border: 2px solid #ccc;background-color: #eee;
                     border-radius: 5px; max-width:100%;" align="bottom" />
                     <div style="text-align:center; max-width:100%;"><a class="button2" href="~/Contact.cshtml#Contact" style="background-color:green; width:100%; padding:0;">Schedule a FREE Initial Consultation </a></div>
 </div>
@@ -705,37 +691,36 @@ max-height:250px; max-width:500px; border-radius: 5px;" />
 
 
     <script>
-        // Select all links with hashes
+        
         $('a[href*="#"]')
-            // Remove links that don't actually link to anything
+            
             .not('[href="#"]')
             .not('[href="#0"]')
             .click(function (event) {
-                // On-page links
+                
                 if (
                     location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
                     &&
                     location.hostname == this.hostname
                 ) {
-                    // Figure out element to scroll to
+                    
                     var target = $(this.hash);
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    // Does a scroll target exist?
+                    
                     if (target.length) {
-                        // Only prevent default if animation is actually gonna happen
+                        
                         event.preventDefault();
                         $('html, body').animate({
                             scrollTop: target.offset().top
                         }, 1000, function () {
-                            // Callback after animation
-                            // Must change focus!
+                            
                             var $target = $(target);
                             $target.focus();
-                            if ($target.is(":focus")) { // Checking if the target was focused
+                            if ($target.is(":focus")) { 
                                 return false;
                             } else {
-                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                                $target.focus(); // Set focus again
+                                $target.attr('tabindex', '-1'); 
+                                $target.focus(); 
                             };
                         });
                     }
