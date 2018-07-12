@@ -596,9 +596,9 @@ a.textSection {
 
 .navigation {
     /*height: 140px;*/
-    background-color: #000;
+    background-color: #a8cff6;
     color: silver;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .brand {
@@ -961,18 +961,7 @@ body {
 
 
 
-#ImgMenuHeader {
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    background: rgba(0,0,0,.4);
-    margin-left: 4px;
-    margin-bottom: 0px;
-    max-width: 500px;
-    padding: 0px;
-    text-indent: 0px;
-    vertical-align: top;
-}
+
     #page-wrap .top{
         margin-top:0px;
     }
@@ -1029,18 +1018,41 @@ img.submenuimg {
     border: 2px solid #ccc;
     background-color: #eee;
     border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-height: 289px;
 }
 img.sectionimg {
     border: 2px solid #ccc;
     background-color: #eee;
     border-radius: 5px;
     max-width: 325px;
-}
-p.subsectiontext, h3.subsectiontext, h2.subsectiontext {
-    max-width: 60%;
-    margin:auto;
-}
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
+p.subsectiontext, h3.subsectiontext, h2.subsectiontext, h4.subsectiontext {
+    max-width: 60%;
+    margin: auto;
+
+}
+p.ImgMenuHeader {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    background: rgba(248,255,240,.4);
+    margin: auto;
+    max-width: 75%;
+    padding: 0px;
+    text-indent: 0px;
+    vertical-align: top;
+}
+span.bonded {
+    vertical-align: middle;
+    margin-top: 0px;
+    text-align: left;
+    padding: 5%;
+    font-size: 24px;
+    color: #333;
+}
 
 @media only screen and (max-width:798px) {
     img.submenuimg {
@@ -1048,10 +1060,30 @@ p.subsectiontext, h3.subsectiontext, h2.subsectiontext {
         border: 2px solid #ccc;
         background-color: #eee;
         border-radius: 5px;
+        max-height:72.4px;
     }
     p.subsectiontext, h3.subsectiontext, h2.subsectiontext {
         max-width: 100%;
     }
+    p.subsectiontext{
+        padding:15px;
+    }
+    p.ImgMenuHeader{
+        max-width:100%;
+        font-size:16px;
+        display:inline-block;
+        margin-bottom:0px;
+    }
+    a.button2{
+        width:100%;
+    }
+    span.bonded {
+        font-size:18px;
+    }
 }
+
+
+
+
 
 

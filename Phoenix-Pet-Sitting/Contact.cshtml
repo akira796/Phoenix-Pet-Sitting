@@ -1,6 +1,11 @@
 ﻿@{
     Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Contact";
+    
+    <meta name="keywords" content="Dog walking, play exercises, overnight pet sitting, Pet care Phoenix, In home pet care, Pet Feeding, Cleanup for dogs, Cats and Pet Sitting, North Phoenix Dog Walker , North Phoenix Pet Sitter, Pet Taxi" />
+    <meta name="author" content="Akira Web Solutions" />
+    <meta name="description" content="Our In-Home Pet Sitting, Dog Walking and Pet Express Taxi Services allow your pets to remain in their own comfortable environment and on their own schedule while you are away at work or out-of-town. We provide professional, expert care of your pets, home and property." />
+
+
 }
 
 <style>
@@ -9,43 +14,39 @@
         font-family: 'Palatino Linotype';
         font-family: 'Times New Roman';
     }
+
     h1, h2, h3, h4 {
         text-align: center;
         color: dodgerblue;
         margin-top: 0px;
         font-family: 'Palatino Linotype';
     }
+
     #backone {
-        background: url('Images/background1.jpeg') left 0px top repeat;
-        
+        /*background-image: url('Images/Phoenix by dayE.jpg');
+        background-size: cover;*/
         font-size: 22px;
-       
         overflow-wrap: break-word;
     }
 
     #backtwo {
         font-size: 22px;
-        
     }
 
     #backthree {
         font-size: 22px;
-        
     }
 
     #backfour {
         font-size: 22px;
-        
     }
 
     #backfive {
         font-size: 22px;
-        
     }
 
     #backsix {
         font-size: 22px;
-        
     }
 
     #ImgMenuHeader {
@@ -53,13 +54,13 @@
         font-size: 22px;
         font-weight: bold;
         background: rgba(248,255,240,.4);
-        
         margin: auto;
         max-width: 75%;
         padding: 0px;
         text-indent: 0px;
         vertical-align: top;
     }
+
     #topalt {
         color: goldenrod;
     }
@@ -72,17 +73,17 @@
     <div id="backone">
         <div style="text-align:center;" id="top">
 
-          
-            <h2 style="background-color:dodgerblue; color:white;"> In-Home Pet Sitting, Dog Walking and Pet Express Taxi Service</h2>
-           
+
+            <p style=" color:black; font-family:Arial;" class="subsectiontext"><span style="font-weight:bold;"> Welcome to Phoenix Pet Sitting! Our In-Home Pet Sitting, Dog Walking and Pet Express Taxi Services</span> allow your pets to remain in their own comfortable environment and on their own schedule while you are away at work or out-of-town. We provide professional, expert care of your pets, home and property.</p>
+
         </div>
 
         <div style="text-align:center;">
             <div style="width:30%; display:inline-block;">
                 <div style="width:100%;">
-                    <p id="ImgMenuHeader">About Us</p>
+                    <p class="ImgMenuHeader">About Us</p>
                     <a href="~/Default.cshtml#About">
-                        <img src="~/Images/Contact.jpeg" alt=""  class="submenuimg" />
+                        <img src="~/Images/Contact.jpg" alt="Phoenix Pet Sitting About Image" class="submenuimg" />
                     </a>
                 </div>
             </div>
@@ -90,19 +91,19 @@
 
             <div style="width:30%; display:inline-block;">
                 <div style="width:100%;">
-                    <p id="ImgMenuHeader">Services</p>
+                    <p class="ImgMenuHeader">Services</p>
                     <a href="~/Default.cshtml#Services">
-                        <img src="~/Images/Phoenix Pet Sitting Services.jpg" alt=""  class="submenuimg" />
+                        <img src="~/Images/Phoenix Pet Sitting Services.jpg" alt="Phoenix Pet Sitting Services Image" class="submenuimg" />
                     </a>
                 </div>
             </div>
 
             <div style="width:30%; display:inline-block;">
                 <div style="width:100%;">
-                    <p id="ImgMenuHeader">Rates</p>
+                    <p class="ImgMenuHeader">Rates</p>
                     <a href="~/Default.cshtml#Rates">
-                        <img src="~/Images/C-Blue-eyed cat - XSmall.JPG" alt="" class="submenuimg"/>
-                        
+                        <img src="~/Images/C-Blue-eyed cat - XSmall.JPG" alt="Phoenix Pet Sitting Rates Image" class="submenuimg" />
+
 
                     </a>
                 </div>
@@ -110,9 +111,9 @@
 
             <div style="width:30%; display:inline-block;">
                 <div style="width:100%;">
-                    <p id="ImgMenuHeader">Service Area</p>
+                    <p class="ImgMenuHeader">Service Area</p>
                     <a href="~/Default.cshtml#ServiceArea">
-                        <img src="~/Images/Service Area.jpeg" alt=""  class="submenuimg" />
+                        <img src="~/Images/Phoenix Pet Sitting Service Map.jpg" alt="Phoenix Pet Sitting Service Map Image" class="submenuimg" />
                     </a>
                 </div>
             </div>
@@ -120,45 +121,45 @@
 
             <div style="width:30%; display:inline-block;">
                 <div style="width:100%;">
-                    <p id="ImgMenuHeader">Contact Us</p>
+                    <p class="ImgMenuHeader">Contact Us</p>
                     <a href="#Contact">
-                        <img src="~/Images/Z-Black Rat with Computer Mouse - XSmall.JPG" alt=""  class="submenuimg" />
+                        <img src="~/Images/Z-Black Rat with Computer Mouse - XSmall.JPG" alt="Phoenix Pet Sitting Contact Image" class="submenuimg" />
                     </a>
                 </div>
             </div>
 
             <div style="width:30%; display:inline-block;">
                 <div style="width:100%;">
-                    <p id="ImgMenuHeader">Our Team</p>
+                    <p class="ImgMenuHeader">Our Team</p>
                     <a href="#ourTeam">
-                        <img src="~/Images/Phoenix Pet Sitting About.jpg" alt=""  class="submenuimg" />
+                        <img src="~/Images/Phoenix Pet Sitting About.jpg" alt="Phoenix Pet Sitting Team Image" class="submenuimg" />
                     </a>
                 </div>
             </div>
 
             <div style="width:30%; display:inline-block;">
                 <div style="width:100%;">
-                    <p id="ImgMenuHeader">Testimonials</p>
+                    <p class="ImgMenuHeader">Testimonials</p>
                     <a href="#Testimonials">
-                        <img src="~/Images/Testimonials.jpeg" alt=""  class="submenuimg" />
+                        <img src="~/Images/Testimonials.jpg" alt="Phoenix Pet Sitting Testimonials Image" class="submenuimg" />
                     </a>
                 </div>
             </div>
 
             <div style="width:30%; display:inline-block;">
                 <div style="width:100%;">
-                    <p id="ImgMenuHeader">Recommended Products</p>
+                    <p class="ImgMenuHeader">Products</p>
                     <a href="#Recommended">
-                        <img src="~/Images/Recommended.jpeg" alt=""  class="submenuimg" />
+                        <img src="~/Images/Recommended.jpg" alt="Phoenix Pet Sitting Products Image" class="submenuimg" />
                     </a>
                 </div>
             </div>
 
             <div style="width:30%; display:inline-block;">
                 <div style="width:100%;">
-                    <p id="ImgMenuHeader">Follow Us!</p>
+                    <p class="ImgMenuHeader">Follow Us!</p>
                     <a href="#Follow">
-                        <img src="~/Images/D-2 Labs Retrieving Stick - SMALL.JPG" alt=""  class="submenuimg" />
+                        <img src="~/Images/D-2 Labs Retrieving Stick - SMALL.JPG" alt="Phoenix Pet Sitting Social Media Image" class="submenuimg" />
                     </a>
                 </div>
             </div>
@@ -179,7 +180,8 @@
             <div style="width:100%; display:inline-flex;">
 
                 <div style=" width:50%; ">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d106339.2115656397!2d-112.1557988376531!3d33.602700366905694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x872b6dd0481f6a03%3A0xf73acacaad099f4!2sPhoenix+Pet+Sitters%2C+802+W+Dahlia+Dr%2C+Phoenix%2C+AZ+85029!3m2!1d33.6027201!2d-112.0857587!5e0!3m2!1sen!2sus!4v1530118719676" width="100%" height="498px;" allowfullscreen></iframe>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212693.39419147576!2d-112.14617879927034!3d33.596630021659685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b724e76f59c1b%3A0x22a618c173ee804d!2sPhoenix+Pet+Sitting+-+The+Belly-Rub+Specialists*21!5e0!3m2!1sen!2sus!4v1530829228244" width="100%" height="498" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
 
 
@@ -203,7 +205,7 @@
                             Name:<br>
                             <input type="text" name="name"><br>
                             @*E-mail:<br>
-                            <input type="text" name="mail"><br>*@
+                                <input type="text" name="mail"><br>*@
                             Comment:<br>
                             <input type="text" name="comment" size="50"><br><br>
                             <input type="submit" value="Send">
@@ -218,8 +220,8 @@
 
 
         <h3 class="subsectiontext">Emergency Service:</h3>
-        <img src="~/Images/pexels-photo-374898.jpeg" alt="Other Bishop Fine Plumbing Services" class="sectionimg" align="left" />
-        <img src="~/Images/RD-Happy Hamster - XSmall.JPG" alt="Other Bishop Fine Plumbing Services" class="sectionimg" align="right" />
+        <img src="~/Images/pexels-photo-374898.jpg" alt="Phoenix Pet Sitting Emergency Services Image" class="sectionimg" align="left" />
+        <img src="~/Images/RD-Happy Hamster - XSmall.JPG"  class="sectionimg" align="right" alt="Phoenix Pet Sitting Services Emergency Services Image" />
 
 
         <p class="subsectiontext">
@@ -237,7 +239,7 @@
             <p>
                 <a href="#top" id="topalt">Top</a>
             </p>
-            <img src="~/Images/C-Cat Sleeping on Legs - XSmall.jpg" alt="Other Bishop Fine Plumbing Services" class="sectionimg" align="right" />
+            <img src="~/Images/C-Cat Sleeping on Leg - XSmall.jpg" alt="Phoenix Pet Sitting Our Team Image" class="sectionimg" align="right" />
 
             <p class="subsectiontext">
                 We are a family owned and operated professional in-home pet sitting service located in North Phoenix. The day-to-day business operation is done by owners Kevin and Wendy Mark, assisted by Darren Mark. Jillian is currently focusing on her career in Personnel and Communications. Our two additional family members are Alia (Lab mix who enjoys playing in thunderstorms) and her brother Zeke (who loves howling at fire trucks as they pass).
@@ -248,7 +250,7 @@
             </p>
 
         </div>
-        <img src="~/Images/F-Saltwater Fish_Blue_XSmall.jpg" alt="Other Bishop Fine Plumbing Services" class="sectionimg" align="left" />
+        <img src="~/Images/F-Saltwater Fish_Blue_XSmall.jpg" alt="Phoenix Pet Sitting Fish Image" class="sectionimg" align="left" />
         <p class="subsectiontext">
             Kevin as a child was involved in 4-H and was a member of the ARBA – American Rabbit Breeders Association. His rabbits won blue ribbons at the Maricopa County Fair. He also rescued and raised Pigeons.
         </p>
@@ -258,7 +260,7 @@
             Additionally, together they had a Zebra Dun horse name Geronimo; Cats named Snowflake, PJ, Slinky; Little-she and Pansy; a Tortoise; Tropical fish aquariums; a Green Parrot; Parakeets and Ducks.
         </p>
         <div style="background-color:beige;">
-            <img src="~/Images/B-African Grey_XSmall.jpg" alt="Other Bishop Fine Plumbing Services" class="sectionimg" align="right" />
+            <img src="~/Images/B-African Grey_XSmall.jpg" alt="Phoenix Pet Sitting Bird Image" class="sectionimg" align="right" />
             <p class="subsectiontext">
                 Growing up the human kids, Darren and Jillian, had a diverse menagerie of pets including many Jumbo Rats; two Leopard Geckos named Apollo and Isabella; a Bearded Dragon named Angus; a Green Iguana named Gizmo; a Turtle; a Garter Snake; a Frog; a Water Snake; a Hermit Crab; many Hampsters; Guinea Pigs; a Sun Conure named Scooter; Betta Fish; Cats named Stormy, Ali-boo and Littlefoot; and Rabbits.
             </p>
@@ -276,11 +278,11 @@
         <p class="subsectiontext">
             Darren and Jillian, spent many summers at the Phoenix Zoo attending Camp Zoo and learning about animals from all over the world. Jillian earned her Pet First Aid Certification during the Zoo Teen Program.
         </p>
-        <img src="~/Images/Golden in Kitchen_Large.jpg" alt="" class="sectionimg" align="left" />
-        <p > 
+        <img src="~/Images/Golden in Kitchen_Large.jpg" alt="Phoenix Pet Sitting Dog Image" class="sectionimg" align="left" />
+        <p class="subsectiontext">
             Because pets are such a large part of their home life, and they have experienced the worry and concern firsthand when having to leave their furry and scaly loved ones in the care of another when going away, they decided to expand their natural affinity for animals and experience into their professional lives as well. In this way they can help other pet owners by offering peace of mind that their pets are receiving the same excellent care, attention and devotion the Marks provide their own pets. Now you can relax and enjoy your time away knowing your pets are in their loving and capable hands!
         </p>
-        <br/>
+        <br />
     </div>
 
 
@@ -295,11 +297,16 @@
 
 
             <div style="text-align:center;">
-                <div class="fb-post" data-href="https://www.facebook.com/shannonlavenia/posts/10214474555831954:0" data-width="350" data-show-text="true"  ><blockquote cite="https://www.facebook.com/shannonlavenia/posts/10214474555831954:0" class="fb-xfbml-parse-ignore"><p>I have used this service twice now and they have been amazing. Wendy sends me pictures every time she is there. It&#039;s very comforting to see the dogs so happy while I&#039;m away. I definitely recommend them.</p>Posted by <a href="https://www.facebook.com/shannonlavenia">Shannon Tice Lavenia</a> on&nbsp;<a href="https://www.facebook.com/shannonlavenia/posts/10214474555831954:0">Sunday, April 15, 2018</a></blockquote></div>
-                <br/>
+                <div class="fb-post" data-href="https://www.facebook.com/shannonlavenia/posts/10214474555831954:0" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/shannonlavenia/posts/10214474555831954:0" class="fb-xfbml-parse-ignore"><p>I have used this service twice now and they have been amazing. Wendy sends me pictures every time she is there. It&#039;s very comforting to see the dogs so happy while I&#039;m away. I definitely recommend them.</p>Posted by <a href="https://www.facebook.com/shannonlavenia">Shannon Tice Lavenia</a> on&nbsp;<a href="https://www.facebook.com/shannonlavenia/posts/10214474555831954:0">Sunday, April 15, 2018</a></blockquote></div>
+                <br />
                 <div class="fb-comments" data-href="http://phoenix-pet-sitting.azurewebsites.net/" data-width="350" data-numposts="5" data-order-by="social"></div>
-                
+
             </div>
+
+
+
+
+
 
         </div>
     </div>
@@ -311,9 +318,10 @@
             <a href="#top" id="topalt">Top</a>
         </p>
         <div style="text-align:center;">
-            <a href="https://www.freshrawdogfood.com/why-raw/"><img src="~/Images/Suzy Dog Delights.jpeg" /></a>
-            <a href="https://www.amazon.com/VITALITY-PROBIOTICS-JOINT-LIVER-SUPPORT/dp/B01N07HB0W"><img src="~/Images/Vitality Probitics For Dogs.jpeg" /></a>
-            
+            <a href="https://www.freshrawdogfood.com/why-raw/" target="_blank"><img src="~/Images/Suzy Dog Delights.jpg" /></a>
+            <a href="https://www.deviantart.com/mikeylyngstad" target="_blank"><img src="~/Images/Pet Portraits.jpg" /></a>
+
+
         </div>
     </div>
 
@@ -321,7 +329,7 @@
         <div style=" background-color:beige;">
             <h2 id="Follow">Follow Us!</h2>
             <p style="padding:0px;">
-                <a href="#top" >Top</a>
+                <a href="#top" id="topalt">Top</a>
             </p>
 
         </div>
@@ -368,10 +376,13 @@
 
 <div id="fb-root"></div>
 <script>
-(function (d, s, id) {
+    (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
         js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
